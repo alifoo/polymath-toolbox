@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Polymath Toolbox",
+  "version": "1.0.0",
+  "description": "Block time-consuming websites so you can focus on becoming a polymath.",
+  "permissions": ["declarativeNetRequest", "storage", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Polymath Toolbox"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html", "delay.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

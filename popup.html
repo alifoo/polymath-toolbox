@@ -1,0 +1,20 @@
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  body { width: 260px; padding: 16px; }
+  h1 { font-size: 20px; }
+  .row { display: flex; align-items: center; justify-content: space-between; margin: 14px 0; }
+  .count { font-size: 13px; opacity: 0.8; }
+</style>
+
+<h1>Polymath Toolbox</h1>
+<div class="row">
+  <span id="status">Blocking on</span>
+  <button id="toggle">Turn off</button>
+</div>
+<div class="count"><span id="count">0</span> sites blocked</div>
+<div class="row">
+  <button class="secondary" id="options">Edit blocklist</button>
+</div>
+
+<script src="popup.js"></script>

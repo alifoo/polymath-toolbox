@@ -1,0 +1,36 @@
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  body { max-width: 620px; margin: 0 auto; padding: 40px 24px; }
+  h1 { font-size: 28px; }
+  form { display: flex; gap: 8px; margin: 20px 0; flex-wrap: wrap; }
+  form input { flex: 1; min-width: 160px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li {
+    display: flex; align-items: center; gap: 8px;
+    border-bottom: 1px solid var(--line);
+    padding: 10px 4px;
+  }
+  li .domain { flex: 0 0 auto; min-width: 120px; }
+  li .redirect { flex: 1; }
+  li .delay { flex: 0 0 70px; width: 70px; }
+  li button { padding: 4px 10px; font-size: 13px; }
+  .hint { font-size: 13px; opacity: 0.8; }
+</style>
+
+<h1>Polymath Toolbox — Blocklist</h1>
+<p>Add domains to block (e.g. <em>reddit.com</em>). Optional redirect sends you
+somewhere useful instead of the message page.</p>
+<p class="hint">Set a <strong>delay</strong> (seconds) to half-block instead:
+a countdown before the site opens. Leave blank to hard-block.</p>
+
+<form id="add-form">
+  <input type="text" id="site-input" placeholder="example.com" autocomplete="off" />
+  <input type="text" id="redirect-input" placeholder="redirect to (optional)" autocomplete="off" />
+  <input type="number" id="delay-input" placeholder="delay s" min="0" autocomplete="off" />
+  <button type="submit">Add</button>
+</form>
+
+<ul id="list"></ul>
+
+<script src="options.js"></script>

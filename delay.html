@@ -1,0 +1,34 @@
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 520px;
+    border: 2px solid var(--ink);
+    padding: 40px 48px;
+    background: var(--scroll-deep);
+  }
+  h1 { font-size: 32px; }
+  .count { font-size: 64px; font-weight: 700; margin: 16px 0; }
+  .site { font-style: italic; }
+  #go { margin-top: 8px; }
+  #go[hidden] { display: none; }
+</style>
+
+<div class="card">
+  <h1>Polymath Toolbox</h1>
+  <p>Opening <strong class="site" id="site"></strong> in&hellip;</p>
+  <div class="count" id="count"></div>
+  <p>Take a breath. Still want it?</p>
+  <button id="go" hidden>Open now</button>
+</div>
+
+<script src="delay.js"></script>

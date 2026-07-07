@@ -1,0 +1,36 @@
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 520px;
+    border: 2px solid var(--ink);
+    padding: 40px 48px;
+    background: var(--scroll-deep);
+  }
+  h1 { font-size: 32px; }
+  .site { font-style: italic; }
+  blockquote {
+    margin: 24px 0 0;
+    font-style: italic;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+</style>
+
+<div class="card">
+  <h1>Polymath Toolbox</h1>
+  <p><strong class="site" id="site"></strong> is blocked.</p>
+  <p>Time better spent mastering something new.</p>
+  <blockquote>"A wise man will make more opportunities than he finds." — Francis Bacon</blockquote>
+</div>
+
+<script src="blocked.js"></script>

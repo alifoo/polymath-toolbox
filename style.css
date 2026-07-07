@@ -1,0 +1,50 @@
+:root {
+  --scroll: #f4ecd8;
+  --scroll-deep: #e8dcc0;
+  --ink: #1a1a1a;
+  --line: #c9b98f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--scroll);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5em;
+}
+
+button {
+  font-family: inherit;
+  background: var(--ink);
+  color: var(--scroll);
+  border: 1px solid var(--ink);
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--ink);
+}
+
+button:hover { opacity: 0.85; }
+
+input[type="text"] {
+  font-family: inherit;
+  background: var(--scroll-deep);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+a { color: var(--ink); }
